@@ -1,0 +1,1 @@
+"use client";import Link from 'next/link';import {useStore} from './StoreProvider';export function Header(){const{count}=useStore();return <header><Link href="/" className="brand">POINT<span>STORE</span></Link><nav><Link href="/shop">Shop</Link><Link href="/points">Points</Link><Link href="/account">Account</Link><Link href="/cart">Cart <i>{count}</i></Link></nav></header>}
